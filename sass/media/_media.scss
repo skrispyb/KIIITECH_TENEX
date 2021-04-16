@@ -1,0 +1,932 @@
+@media screen and (min-width: 768px) {
+  .site-header {
+    padding: 0 0.75rem;
+  }
+
+  .menu-container-main {
+    display: none;
+  }
+
+  .menu-container-main-lg {
+    display: block;
+
+    .menu-main {
+      ul {
+        padding: 0;
+        margin: 0;
+        display: flex;
+        flex-direction: row;
+        gap: 2rem;
+
+        li {
+          list-style-type: none;
+
+          a {
+            text-decoration: none;
+          }
+        }
+      }
+    }
+  }
+
+  .small,
+  .large {
+    display: none;
+  }
+
+  h2 {
+    margin-bottom: 0;
+    font-size: 3rem;
+  }
+
+  .medium {
+    display: block;
+  }
+
+  .hero-image {
+    article {
+      .hero-image-wrapper {
+        .hero-image-content-wrapper {
+          h1 {
+            font-size: 48px;
+            margin-top: 5rem;
+          }
+
+          p:nth-of-type(1) {
+            font-size: 1.5rem;
+            margin-top: 1.5rem;
+          }
+
+          p:nth-of-type(2) {
+            font-size: 1.5rem;
+          }
+
+          img {
+            margin-top: 2rem;
+            width: 400px;
+          }
+
+          .link-to-pwa {
+            margin-top: 4rem;
+          }
+        }
+      }
+    }
+  }
+
+  .upper-posts {
+    article {
+      .entry-title-category-wrapper {
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 1rem;
+      }
+
+      .title-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        .entry-title {
+          font-size: 1.625rem;
+          text-align: left;
+        }
+        .entry-content {
+          p {
+            font-size: 1.125rem;
+            text-align: left;
+          }
+        }
+      }
+    }
+
+    article:nth-of-type(1) {
+      padding-top: 6rem;
+      padding-bottom: 6rem;
+      background-image: url("images/features_bg_01_md.png");
+
+      .entry-thumbnail {
+        grid-column: 2;
+        grid-row: 1;
+
+        .home2 {
+          display: block;
+        }
+
+        .cal2,
+        .cal3,
+        .req2,
+        .req3,
+        .home1,
+        .home3,
+        .cal1,
+        .req1 {
+          display: none;
+        }
+      }
+
+      .title-content {
+        grid-column: 1;
+        grid-row: 1;
+        padding-left: 2rem;
+      }
+    }
+
+    article:nth-of-type(2) {
+      .entry-thumbnail {
+        .req2 {
+          display: block;
+        }
+
+        .home1,
+        .home2,
+        .home3,
+        .cal1,
+        .cal2,
+        .cal3,
+        .req1,
+        .req3 {
+          display: none;
+        }
+      }
+
+      .title-content {
+        padding-right: 2rem;
+      }
+    }
+
+    article:nth-of-type(3) {
+      padding-top: 6rem;
+      padding-bottom: 6rem;
+      background-image: url("images/features_bg_02_md.png");
+
+      .entry-thumbnail {
+        grid-column: 2;
+        grid-row: 1;
+
+        .cal2 {
+          display: block;
+        }
+
+        .cal1,
+        .cal3,
+        .home1,
+        .home2,
+        .home3,
+        .req1,
+        .req2,
+        .req3 {
+          display: none;
+        }
+      }
+
+      .title-content {
+        grid-column: 1;
+        grid-row: 1;
+        padding-left: 2rem;
+      }
+    }
+  }
+
+  .post-blog {
+    font-size: 3rem;
+  }
+
+  //   ******************** Blog Area *******************
+
+  h1 {
+    font-size: 3rem;
+  }
+
+  .blog-area {
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1.5rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+
+    article:last-child {
+      display: none;
+    }
+
+    article {
+      .entry-title {
+        a {
+          font-size: 20px;
+        }
+      }
+      .category-tag-wrapper {
+        font-size: 14px;
+      }
+
+      .entry-content {
+        p {
+          font-size: 1rem;
+        }
+      }
+    }
+  }
+
+  //   ******************* Review Area ******************
+
+  .wpcr3_reviews_holder {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .reviews_showcase {
+    padding: 6rem 1.5rem;
+    background-image: url("images/review_bg_md.png");
+
+    .wpcr3_review {
+      .wpcr3_review_author {
+        font-size: 0 !important;
+        font-weight: bold;
+        font-style: normal !important;
+        .wpcr3_caps {
+          font-size: 18px;
+        }
+      }
+
+      blockquote.wpcr3_content {
+        p {
+          font-size: 16px;
+        }
+      }
+    }
+  }
+
+  .wpcr3_reviews_holder .wpcr3_review_item:last-of-type {
+    display: flex;
+  }
+
+  .btn-main {
+    display: none;
+  }
+
+  .intro {
+    p {
+      font-size: 1.125rem;
+      text-align: left;
+    }
+
+    p:nth-of-type(1) {
+      padding-top: 0.5rem;
+    }
+  }
+
+
+  .team-members h2 {
+      font-size: 1.25rem;
+  }
+
+  .team-members article .post-thumbnail {
+    max-width: 80%;
+  }
+
+  .team-member-postion {
+    font-size: 1rem;
+  }
+
+  .our_team {
+    margin-top: 10rem;
+    margin-bottom: 0.5rem;
+  }
+  .about-us {
+    max-width: 1200px;
+    display: flex;
+    flex-flow: column nowrap;
+
+    justify-items: start;
+    margin: 3rem auto 0 auto;
+
+    h1 {
+      margin-top: 3rem;
+      margin-bottom: 0.5rem;
+    }
+  }
+
+  .intro {
+    max-width: 1200px;
+    margin: 2rem auto 0 auto;
+    padding: 0 1rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    grid-gap: 1rem;
+  }
+
+  .intro p:nth-child(1) {
+    grid-column: 2/3;
+    grid-row: 1;
+    margin: 0;
+  }
+
+  .intro .attachment-post-thumbnail {
+    margin-top: 0;
+    grid-column: 1/2;
+    grid-row: 1 / -1;
+  }
+
+  .intro p:nth-child(2) {
+    grid-column: 2/3;
+    grid-row: 2;
+    margin-top: 0;
+  }
+
+  .team-members {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .menu-container-main .menu-main ul {
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 2rem;
+  }
+
+  .inner-posts {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1rem;
+  }
+
+  .wpcr3_respond_1.wpcr3_in_content {
+    background-image: url("images/review_bg_md.png");
+    .wpcr3_respond_2 {
+      .wpcr3_div_2 {
+        width: 500px;
+      }
+    }
+  }
+
+  .single article {
+    .entry-title-category-wrapper {
+      order: -1;
+      margin: 2rem auto;
+      max-width: 600px;
+    }
+
+    .entry-content {
+      p {
+        font-size: 24px;
+      }
+      h3 {
+        font-size: 30px;
+      }
+      max-width: 600px;
+    }
+
+    .category-tag-wrapper {
+      order: 2;
+      width: 600px;
+      margin: auto;
+      text-align: left;
+      font-size: 1rem;
+    }
+  }
+
+  .ref {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+
+  footer {
+    padding-top: 8rem;
+
+    .menu-container-footer .menu-main-footer ul {
+      display: flex;
+      flex-flow: row nowrap;
+      gap: 0.8rem;
+
+      li {
+        a {
+          font-size: 1.25rem;
+        }
+      }
+    }
+  }
+
+  .ref-header {
+    margin-top: 6rem;
+    text-align: center;
+  }
+
+  .wpcr3_respond_1.wpcr3_in_content
+    .wpcr3_respond_2
+    .wpcr3_div_2
+    table
+    tbody
+    tr:nth-of-type(2)
+    td:nth-of-type(2)
+    input,
+  .wpcr3_respond_1.wpcr3_in_content
+    .wpcr3_respond_2
+    .wpcr3_div_2
+    table
+    tbody
+    tr:nth-of-type(3)
+    td:nth-of-type(2)
+    input {
+    margin-left: -3.5rem;
+    width: calc(100% + 2.5rem);
+  }
+
+  .wpcr3_rating_stars {
+    margin-left: -3.5rem;
+  }
+}
+
+//  ************************* Tablet Layout End *****************************
+
+@media screen and (min-width: 1020px) {
+  .small,
+  .medium {
+    display: none;
+  }
+
+  .large {
+    display: block;
+  }
+
+  .hero-image {
+    article {
+      .hero-image-wrapper {
+        .hero-image-content-wrapper {
+          width: 960px;
+          margin: 0 auto;
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+
+          h1,
+          p:nth-of-type(1),
+          p:nth-of-type(2),
+          .link-to-pwa {
+            grid-column: 1 / span 1;
+            grid-row: 1;
+          }
+
+          h1 {
+            margin-top: 5.25rem;
+          }
+
+          p:nth-of-type(1) {
+            margin-top: 9.75rem;
+          }
+
+          p:nth-of-type(2) {
+            margin-top: 12.25rem;
+          }
+
+          .link-to-pwa {
+            margin-top: 17.5rem;
+          }
+
+          img {
+            grid-column: 2 / span 1;
+            margin-top: 2.75rem;
+          }
+        }
+      }
+    }
+  }
+
+  .upper-posts {
+    article {
+      .entry-title-category-wrapper {
+        margin-left: auto;
+        margin-right: auto;
+        grid-gap: 2.5rem;
+
+        .title-content {
+          .entry-title {
+            font-size: 2.25rem;
+          }
+          .entry-content {
+            p {
+              font-size: 1.5rem;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .intro {
+    p {
+      font-size: 1.5rem;
+      text-align: left;
+    }
+
+    p:nth-of-type(1) {
+      padding-top: 2rem;
+    }
+  }
+
+  .wpcr3_respond_1.wpcr3_in_content {
+    padding: 1rem 0 !important;
+    background-image: url("images/review_bg_md.png");
+    .wpcr3_respond_2 {
+      .wpcr3_div_2 {
+        width: 700px;
+      }
+    }
+
+    table {
+      tr {
+        label {
+          font-size: 24px;
+        }
+        input,
+        textarea {
+          font-size: 24px;
+        }
+        .wpcr3_check_confirm label {
+          font-size: 16px;
+        }
+      }
+    }
+  }
+
+  .wpcr3_respond_1.wpcr3_in_content
+    .wpcr3_respond_2
+    .wpcr3_div_2
+    table
+    tbody
+    tr:nth-of-type(2)
+    td:nth-of-type(2)
+    input,
+  .wpcr3_respond_1.wpcr3_in_content
+    .wpcr3_respond_2
+    .wpcr3_div_2
+    table
+    tbody
+    tr:nth-of-type(3)
+    td:nth-of-type(2)
+    input {
+    margin-left: 0.5rem;
+    width: 600px;
+  }
+
+  .wpcr3_rating_stars {
+    margin-left: 0.5rem;
+  }
+}
+
+//  ************************* Laptop Layout End *****************************
+
+@media screen and (min-width: 1200px) {
+  .site-header-wrapper {
+    max-width: 1200px;
+    z-index: 100;
+  }
+
+  .menu-container-main-lg {
+    .menu-main {
+      ul {
+        li {
+          a {
+            font-size: 1.25rem;
+          }
+        }
+      }
+    }
+  }
+  .small,
+  .medium {
+    display: none;
+  }
+
+  .post-blog,
+  .reviews_showcase h2,
+  #contact-us h2 {
+    margin-bottom: 0;
+    font-size: 48px;
+  }
+
+  .large {
+    display: block;
+  }
+  .hero-image {
+    article {
+      .hero-image-wrapper {
+        .hero-image-content-wrapper {
+          width: 1280px;
+          margin: 0 auto;
+          grid-gap: 2rem;
+
+          h1,
+          p:nth-of-type(1),
+          p:nth-of-type(2),
+          .link-to-pwa {
+            grid-column: 1 / span 1;
+            grid-row: 1;
+          }
+
+          h1 {
+            margin-top: 10.25rem;
+            font-size: 4.5rem;
+          }
+
+          p:nth-of-type(1) {
+            margin-top: 17.25rem;
+            font-size: 2rem;
+          }
+
+          p:nth-of-type(2) {
+            margin-top: 20.75rem;
+            font-size: 2rem;
+          }
+
+          .link-to-pwa {
+            margin-top: 28rem;
+          }
+
+          img {
+            grid-column: 2 / span 1;
+            margin-top: 7rem;
+            width: 600px;
+          }
+        }
+      }
+    }
+  }
+
+  .upper-posts {
+    article {
+      .entry-title-category-wrapper {
+        max-width: 1200px;
+        margin-left: auto;
+        margin-right: auto;
+        grid-gap: 4rem;
+
+        .title-content {
+          .entry-title {
+            font-size: 2.25rem;
+          }
+          .entry-content {
+            p {
+              font-size: 1.5rem;
+            }
+          }
+        }
+      }
+    }
+
+    article:nth-of-type(1) {
+      padding: 8rem 3%;
+      background-image: url("images/features_bg_01_lg.png");
+
+      .entry-thumbnail {
+        .home3 {
+          display: block;
+          width: 640px;
+        }
+
+        .cal3,
+        .req3,
+        .cal2,
+        .req2,
+        .home1,
+        .home2,
+        .cal1,
+        .req1 {
+          display: none;
+        }
+      }
+    }
+
+    article:nth-of-type(2) {
+      padding: 6rem 3%;
+      .entry-thumbnail {
+        .req3 {
+          display: block;
+          width: 640px;
+        }
+
+        .home1,
+        .home2,
+        .home3,
+        .cal1,
+        .cal2,
+        .cal3,
+        .req1,
+        .req2 {
+          display: none;
+        }
+      }
+    }
+
+    article:nth-of-type(3) {
+      padding: 8rem 3%;
+      background-image: url("images/features_bg_02_lg.png");
+      .entry-thumbnail {
+        .cal3 {
+          display: block;
+          width: 640px;
+        }
+
+        .cal1,
+        .cal2,
+        .home1,
+        .home2,
+        .home3,
+        .req1,
+        .req2,
+        .req3 {
+          display: none;
+        }
+      }
+    }
+  }
+
+  .blog-area {
+    grid-template-columns: repeat(3, 1fr);
+    padding: 2rem 3%;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+
+    article:last-child {
+      display: block;
+    }
+
+    article {
+      .entry-title {
+        a {
+          font-size: 1.25rem;
+        }
+      }
+      .category-tag-wrapper {
+        font-size: 0.875rem;
+      }
+
+      .entry-content {
+        p {
+          font-size: 1rem;
+        }
+      }
+    }
+  }
+
+  .reviews_showcase {
+    padding: 12rem 2%;
+    background-image: url("images/review_bg_lg.png");
+
+    .wpcr3_reviews_holder {
+      grid-template-columns: 1fr 1fr 1fr;
+      max-width: 1200px;
+      margin-left: auto;
+      margin-right: auto;
+      .wpcr3_review_item:last-of-type {
+        display: none;
+      }
+    }
+  }
+
+  #contact-us {
+    form {
+      max-width: 800px;
+      margin: 0 auto;
+
+      p:nth-of-type(1) {
+        grid-column: 2;
+        grid-row: 1;
+      }
+
+      p:nth-of-type(2) {
+        grid-column: 2;
+        grid-row: 2;
+      }
+      p:nth-of-type(3) {
+        grid-column: 1;
+        grid-row: 1/ -1;
+      }
+      p:nth-of-type(4) {
+        grid-column: 2;
+        grid-row: 3;
+
+        input {
+          height: max-content;
+        }
+      }
+    }
+  }
+
+  .intro {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .intro p:nth-child(1) {
+    grid-column: 2/2;
+    align-self: flex-end;
+    text-align: left;
+    padding: 0 6rem 0 2rem;
+  }
+
+  .intro .attachment-post-thumbnail {
+    grid-column: 1 / span 1;
+  }
+
+  .intro p:nth-child(2) {
+    grid-column: 2/2;
+    text-align: left;
+    padding: 0 6rem 0 2rem;
+  }
+
+  .team-members {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 1.5rem;
+
+    article {
+      margin-top: 1rem;
+
+      h2 {
+        font-size: 1.25rem;
+      }
+    }
+  }
+
+  .inner-posts {
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 1rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 1rem;
+  }
+
+  .wpcr3_respond_1.wpcr3_in_content {
+    padding: 1rem 0 !important;
+    background-image: url("images/review_bg_lg.png");
+    .wpcr3_respond_2 {
+      .wpcr3_div_2 {
+        width: 700px;
+      }
+    }
+
+    table {
+      tr {
+        label {
+          font-size: 24px;
+        }
+        input,
+        textarea {
+          font-size: 24px;
+        }
+        .wpcr3_check_confirm label {
+          font-size: 16px;
+        }
+      }
+    }
+  }
+
+  .single article {
+    .entry-thumbnail {
+      max-height: 800px;
+      overflow: hidden;
+    }
+    .entry-title-category-wrapper {
+      max-width: 800px;
+    }
+  }
+
+  .ref {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1.5rem;
+    max-width: 1200px;
+    margin: auto;
+
+    h3 {
+      margin-top: 0.5rem;
+    }
+  }
+
+  .ref-header {
+    margin-top: 6rem;
+  }
+
+  .blogs-latest {
+    margin-top: 6rem;
+  }
+
+  footer {
+    padding-top: 12rem;
+
+    .footer-logo {
+      .logo {
+        max-width: 40%;
+      }
+    }
+
+    .menu-container-footer .menu-main-footer ul {
+      gap: 2rem;
+    }
+  }
+}
+
+//  ************************* Desktop Layout End *****************************

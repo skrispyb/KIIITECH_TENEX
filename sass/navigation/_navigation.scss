@@ -1,0 +1,68 @@
+/* BUTTONS ================*/
+
+@import "button";
+
+a {
+  text-decoration: none;
+  color: #4f4f4f;
+}
+
+.site-header {
+  background-color: white;
+}
+
+.menu-container-main {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 100;
+  background-color: #DCEBE9;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.menu-main {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.menu-container-main ul {
+  margin: 8rem 0 0 0;
+  padding: 0;
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 0.5rem;
+
+  li {
+    list-style-type: none;
+    text-align: center;
+
+    a {
+      text-decoration: none;
+    }
+  }
+  
+}
+
+.site-title img {
+  width: 40px;
+}
+
+.menu-container-main ul a {
+  color: #4f4f4f;
+}
+
+.site-footer ul {
+  list-style-type: none;
+}
+
+.site-footer .menu-main-footer a {
+  color:#4f4f4f;
+
+}
+

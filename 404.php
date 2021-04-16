@@ -1,60 +1,28 @@
-<?php
-/**
- * The template for displaying 404 pages (not found)
- *
- * @link https://codex.wordpress.org/Creating_an_Error_404_Page
- *
- * @package KIIITECH_TENEX
- */
+<?php 
 
-get_header();
-?>
+get_header(); 
 
-	<main id="primary" class="site-main">
+if ( is_404() ) :
+    ?> <div class="no_content_image">
+       <?php $args = array(
+          'post_type'             =>  'upper_pages',
+          'name'    => 'about'
+        
+        );
+        $my_query = new WP_Query( $args );
+        while ( $my_query->have_posts() ) :
+            $my_query->the_post();
+            the_post_thumbnail();
+        endwhile;
+        ?>
+    </div>    
 
-		<section class="error-404 not-found">
-			<header class="page-header">
-				<h1 class="page-title"><?php esc_html_e( 'Oops! That page can&rsquo;t be found.', 'kiiitech_tenex' ); ?></h1>
-			</header><!-- .page-header -->
+  <div class="back_to_home">404 page not found. Try something else.<br>
+  Or go back to <a href="<?php echo home_url(); ?>">homepage.</a> 
+</div>
+  <?php
+endif;  
 
-			<div class="page-content">
-				<p><?php esc_html_e( 'It looks like nothing was found at this location. Maybe try one of the links below or a search?', 'kiiitech_tenex' ); ?></p>
-
-					<?php
-					get_search_form();
-
-					the_widget( 'WP_Widget_Recent_Posts' );
-					?>
-
-					<div class="widget widget_categories">
-						<h2 class="widget-title"><?php esc_html_e( 'Most Used Categories', 'kiiitech_tenex' ); ?></h2>
-						<ul>
-							<?php
-							wp_list_categories(
-								array(
-									'orderby'    => 'count',
-									'order'      => 'DESC',
-									'show_count' => 1,
-									'title_li'   => '',
-									'number'     => 10,
-								)
-							);
-							?>
-						</ul>
-					</div><!-- .widget -->
-
-					<?php
-					/* translators: %1$s: smiley */
-					$kiiitech_tenex_archive_content = '<p>' . sprintf( esc_html__( 'Try looking in the monthly archives. %1$s', 'kiiitech_tenex' ), convert_smilies( ':)' ) ) . '</p>';
-					the_widget( 'WP_Widget_Archives', 'dropdown=1', "after_title=</h2>$kiiitech_tenex_archive_content" );
-
-					the_widget( 'WP_Widget_Tag_Cloud' );
-					?>
-
-			</div><!-- .page-content -->
-		</section><!-- .error-404 -->
-
-	</main><!-- #main -->
-
-<?php
 get_footer();
+
+

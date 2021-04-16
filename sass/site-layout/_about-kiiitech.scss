@@ -1,0 +1,73 @@
+.about-us {
+  margin: 3rem 1rem 0 1rem;
+  color: #4f4f4f;
+}
+
+.intro {
+  margin-left: 1rem;
+  margin-right: 1rem;
+  color: #4f4f4f;
+}
+
+.intro p {
+  padding: 0 1rem;
+  font-size: 1rem;
+}
+
+.intro img {
+  margin-top: 1.25rem;
+}
+
+.about-us h1 {
+  margin-bottom: 1.5rem;
+}
+
+.about-us img {
+  max-width: 20px;
+  height: auto;
+}
+
+.team-members {
+  padding: 0 3rem;
+
+  article {
+    margin-top: 2.5rem;
+
+    .post-thumbnail {
+      max-width: 80%;
+      margin: 2rem auto 0 auto;
+    }
+    h2 {
+      margin-top: 0.5rem;
+      margin-bottom: 0.5rem;
+      font-size: 1.25rem;
+    }
+  }
+}
+.team-members h2,
+.team-member-postion {
+  text-align: center;
+  color: #81b7ae;
+}
+
+.team-members h1 {
+  text-align: center;
+  font-size: 1.5rem;
+  color: #81b7ae;
+}
+
+.team-member-postion {
+  color: #4f4f4f;
+}
+.our_team {
+  margin-top: 6rem;
+  text-align: center;
+  color: #81b7ae;
+}
+
+.about-us,
+.intro {
+  text-align: center;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}

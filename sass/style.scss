@@ -1,0 +1,28 @@
+/*
+Theme Name: KIIITECH_TENEX
+Author: Victor Janto, Sumeet Kumar, Kamaljit Kaur, Sayena Einafshar, Sinae Bak, Chun Mei Lin
+Description: Theme of integrated project work of TENEX application.
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: kiiitech_tenex
+This theme, like WordPress, is licensed under the GPL.
+*/
+
+/* Reset ==================================== */
+@import "reset/reset";
+
+/* Checking ================================= */
+@import "site-layout/header-footer";
+
+/* Accessibility ============================ */
+@import "accessibility/accessibility";
+
+/* Navigation =============================== */
+@import "navigation/navigation";
+
+/* Typography =============================== */
+@import "typography/typography";
+
+/* Media Query ============================== */
+@import "media/media";

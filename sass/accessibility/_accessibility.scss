@@ -1,0 +1,102 @@
+.screen-reader-text {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+.hidden {
+  display: none !important;
+}
+
+.site-header {
+  .site-header-wrapper {
+    .menu-container-main-lg {
+      .menu-main {
+        ul {
+          li {
+            a {
+              &:hover {
+                font-weight: bold;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+
+*:focus {
+  outline: none;
+}
+
+input:focus,
+input:active,
+textarea:focus,
+textarea:active,
+button:focus {
+  outline: #81b7ae solid 2px;
+}
+
+#viewmore:hover, #review:hover, input[type="submit"]:hover {
+  transition: all 0.3s ease-in-out;
+}  
+  #viewmore:hover, #review:hover {
+color: black;
+  background-color: #DCEBE9;
+}
+
+
+input[type="submit"]:hover {
+  cursor: pointer;
+  color: black;
+  background-color: #DCEBE9;
+}
+
+/* Ripple effect */
+#applink {
+  background-position: center;
+  transition: all 0.3s ease-out;
+}
+#applink:hover {
+  background: #81b7ae radial-gradient(circle, transparent 1%, #81b7ae 1%)
+    center/15000%;
+  color: white;
+}
+#applink:active {
+  background-color: #9cdfd3;
+  background-size: 100%;
+  transition: all 0s;
+  color: white;
+}
+
+.menu-container-main {
+  .menu-main {
+    ul {
+      li {
+        a:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}
+
+
+.team-members {
+  article {
+    .post-thumbnail {
+      img {
+        transition: all 0.5s;
+      }
+      img:hover {
+        transform: scaleX(-1);
+      } 
+    }
+  }
+}

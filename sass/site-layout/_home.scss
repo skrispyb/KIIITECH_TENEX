@@ -1,0 +1,389 @@
+// ******************* Hero Image *********************
+.hero-image {
+  text-align: center;
+
+  article {
+    .hero-image-wrapper {
+      display: grid;
+
+      img {
+        grid-column: 1 / -1;
+        grid-row: 1 / -1;
+      }
+
+      .hero-image-content-wrapper {
+        grid-column: 1 / -1;
+        grid-row: 1 / -1;
+
+        h1 {
+          margin: 3rem 0 0 0;
+        }
+
+        p:nth-of-type(1) {
+          margin: 1rem 0 0 0;
+        }
+
+        p:nth-of-type(2) {
+          margin: 0.5rem 0 2rem 0;
+        }
+
+        img {
+          width: 300px;
+        }
+
+        .link-to-pwa {
+          margin: 1.5rem auto 0 auto;
+          width: 343px;
+        }
+      }
+    }
+  }
+}
+
+// ******************* Upper Posts *********************
+.upper-posts {
+  text-align: center;
+  margin-top: 0.5rem;
+
+  article {
+    padding: 3rem 2rem;
+
+    .entry-title-category-wrapper {
+      display: grid;
+    }
+
+    .entry-title {
+      margin-top: 0;
+    }
+
+    .entry-thumbnail {
+      margin-left: 1.5rem;
+    }
+  }
+
+  article:nth-of-type(1) {
+    background-image: url("images/features_bg_01_sm.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    .entry-thumbnail {
+      .home1 {
+        display: block;
+      }
+
+      .home2,
+      .home3,
+      .cal1,
+      .cal2,
+      .cal3,
+      .req1,
+      .req2,
+      .req3 {
+        display: none;
+      }
+    }
+  }
+  article:nth-of-type(2) {
+    .entry-thumbnail {
+      .req1 {
+        display: block;
+      }
+
+      .home1,
+      .home2,
+      .home3,
+      .cal1,
+      .cal2,
+      .cal3,
+      .req2,
+      .req3 {
+        display: none;
+      }
+    }
+  }
+  article:nth-of-type(3) {
+    background-image: url("images/features_bg_02_sm.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding-bottom: 2rem;
+    .entry-thumbnail {
+      .cal1 {
+        display: block;
+      }
+
+      .home1,
+      .home2,
+      .home3,
+      .cal2,
+      .cal3,
+      .req1,
+      .req2,
+      .req3 {
+        display: none;
+      }
+    }
+  }
+}
+
+.medium,
+.large {
+  display: none;
+}
+
+.small {
+  display: block;
+}
+
+// ******************* Blog Area *********************
+
+.post-blog {
+  text-align: center;
+  color: #4f4f4f;
+  margin-top: 6rem;
+  margin-bottom: 0;
+}
+
+.blog-area {
+  padding: 2rem 1rem;
+  display: grid;
+  grid-gap: 2rem;
+  grid-template-columns: 1fr;
+
+  article {
+    display: block;
+  }
+}
+
+.blog-area h2 {
+  line-height: 1.5rem;
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+}
+
+.blog-area p {
+  margin: 0.5rem 0;
+}
+
+.category-tag-wrapper {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
+}
+
+.blog-area .readmore {
+  text-align: center;
+  margin-top: 0.5rem;
+}
+
+.home .readmore a {
+  color: #4980c1;
+  font-weight: 600;
+  margin-bottom: 2rem;
+}
+
+// ********************** Reviews Section **************************8
+
+.reviews_showcase {
+  margin-top: 4rem;
+  padding: 2rem 1rem;
+  background-image: url("images/review_bg_sm.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  > div {
+    margin-top: 2rem;
+  }
+
+  div.review {
+    margin-top: 3rem;
+  }
+}
+
+.wpcr3_reviews_holder {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-auto-rows: 1fr;
+  grid-gap: 1rem;
+
+  .wpcr3_review_item {
+    .wpcr3_item {
+      height: 100%;
+    }
+    .wpcr3_dotline {
+      border: none !important;
+      margin: 0 !important;
+    }
+
+    .wpcr3_review {
+      border: 2px solid #e0e0e0;
+      box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.12);
+      border-radius: 8px;
+      padding: 1rem;
+      background-color: #fff;
+      margin: 0;
+      min-height: 7rem;
+      display: flex;
+      flex-direction: column;
+
+      .wpcr3_review_datePublished {
+        display: none !important;
+      }
+
+      .wpcr3_review_author {
+        margin-top: 0.5rem;
+
+        span:nth-of-type(2) {
+          display: none !important;
+        }
+        .wpcr3_caps {
+          font-size: 16px;
+        }
+      }
+    }
+  }
+}
+
+.reviews_showcase h2 {
+  text-align: center;
+}
+
+div.wpcr3_review blockquote.wpcr3_content {
+  padding-bottom: 0;
+}
+
+.single .entry-title-category-wrapper {
+  margin-left: 1rem;
+  margin-right: 1rem;
+  max-width: 550px;
+  margin: auto;
+}
+.single .entry-content {
+  margin-left: 1rem;
+  margin-right: 1rem;
+  max-width: 550px;
+  margin: auto;
+}
+
+.single article {
+  display: flex;
+  flex-direction: column;
+}
+
+.single .category-tag-wrapper {
+  margin-left: 1rem;
+  width: 550px;
+  margin: auto;
+  text-align: left;
+}
+.single .category-wrapper {
+  margin-bottom: 0.5rem;
+}
+
+.wpcr3_reviews_holder .wpcr3_review_item:last-of-type {
+  display: none;
+}
+
+// ********************** Contact Us Form **********************
+#contact-us {
+  margin: 6rem auto 0 auto;
+  width: calc(100% - 2rem);
+  max-width: 736px;
+
+  h2 {
+    text-align: center;
+  }
+
+  form {
+    p {
+      margin: 0;
+
+      label {
+        input {
+          width: calc(100% - 1rem);
+          padding: 0.5rem;
+          border: 0;
+          border-bottom: 2px solid #bdbdbd;
+        }
+        textarea {
+          width: calc(100% - 1.5rem);
+          margin-top: 0.75rem;
+          padding: 0.75rem;
+          border: 0;
+          box-shadow: inset 2px 2px 4px rgba(0, 0, 0, 0.12);
+        }
+      }
+      &:last-of-type {
+        display: flex;
+        justify-content: center;
+
+        span {
+          display: none;
+        }
+      }
+    }
+  }
+}
+.ref-header {
+  margin-top: 3rem;
+  text-align: center;
+}
+
+.ref {
+  display: grid;
+  grid-gap: 1rem;
+  padding: 1rem;
+  h3 {
+    margin-top: 0.5rem;
+
+    span {
+      text-decoration: underline;
+    }
+  }
+}
+
+.ninja-form1 h3 {
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.single-upper_posts .category-tag-wrapper {
+  visibility: hidden;
+}
+
+.viewmore,
+.review {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nf-field-element {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+//  ************************* Mobile Layout *****************************
+
+//  ************************* 404 Page **********************************
+.no_content_image {
+  max-width: 800px;
+  margin: auto;
+  padding: 2rem;
+}
+
+.back_to_home {
+  font-size: 20px;
+  text-align: center;
+  line-height: 150%;
+  margin-top: 1rem;
+  a {
+    color: #497e74;
+    font-weight: bold;
+    text-decoration: underline;
+  }
+}
+
+// ************************** 404 Page **********************************

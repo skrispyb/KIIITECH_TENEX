@@ -1,0 +1,148 @@
+@import "home";
+@import "about-kiiitech";
+@import "blogs";
+@import "review";
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.site-header {
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.12);
+}
+
+.site-header-wrapper {
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  padding: 1rem 1rem 0.7rem 1rem;
+
+  .site-branding {
+    .site-title {
+      margin: 0;
+    }
+  }
+}
+
+.menu-container-main-lg {
+  display: none;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+.menu-social a::before {
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  font-family: "Font Awesome 5 Brands";
+}
+
+.menu-social a[href= "http://facebook.com"]::before,
+.menu-social a[href= "https://facebook.com"]::before
+{
+  content: "\f082";
+}
+
+.menu-social a[href= "http://twitter.com"]::before,
+.menu-social a[href= "https://twitter.com"]::before
+{
+  content: "\f081";
+}
+
+.menu-social a[href= "http://instagram.com"]::before,
+.menu-social a[href= "https://instagram.com"]::before
+{
+  content: "\e055";
+}
+
+.upper-posts a {
+  color: #4f4f4f !important;
+}
+
+.wpcr3_content {
+  margin: 0;
+}
+
+footer {
+  background-image: url("images/background-image.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #4f4f4f;
+  margin-top: 4rem;
+  padding: 7rem 2rem 2rem 2rem;
+  background-position: center top;
+}
+
+.logo {
+  max-width: 20%;
+}
+
+.menu-container-footer {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+}
+.footer-logo {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu-main-footer {
+  display: flex;
+  flex-flow: row nowrap;
+  font-size: 1.2rem;
+
+  ul {
+    margin: 0;
+    padding: 0;
+  }
+}
+.menu-social {
+  display: flex;
+  flex-flow: row nowrap;
+
+  ul {
+    padding: 0;
+  }
+}
+
+.menu-container-footer .menu-main-footer ul {
+  display: flex;
+  flex-flow: row nowrap;
+  gap: 0.8rem;
+
+  li {
+    a {
+      font-size: 1rem;
+    }
+  }
+}
+
+.menu-social ul {
+  display: flex;
+  flex-flow: row nowrap;
+  gap: 2rem;
+}
+
+.copyright p {
+  margin: 2rem 0 0 0;
+}

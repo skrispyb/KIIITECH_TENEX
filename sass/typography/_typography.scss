@@ -1,0 +1,169 @@
+// @font-face {
+//   font-family: "futura-bold", sans-serif;
+//   src: url("localhost/tenex_wp_spring2021/wp-includes/fonts/Futura_bold.otf");
+// }
+
+// body {
+//   font-family: "futura_bold", sans-serif;
+// }
+
+@font-face {
+  font-family: futurabold;
+  src: url(fonts/Futura_bold.otf);
+  // format("opentype");
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: sfprodisplayregular;
+  src: url(fonts/SFProDisplayRegular.ttf);
+  // format("opentype");
+  font-weight: regular;
+}
+
+@font-face {
+  font-family: sfprodisplayheavy;
+  src: url(fonts/SFProDisplay-Heavy.ttf);
+  // format("opentype");
+  font-weight: bold;
+}
+
+h1 {
+  font-family: futurabold, sans-serif;
+}
+
+body {
+  font-family: sfprodisplayregular, sans-serif;
+}
+
+h2 {
+  font-family: futurabold, sans-serif;
+  color: #4F4F4F;
+}
+
+.menu-container-main-lg {
+  .menu-main {
+    ul {
+      li {
+        a {
+          color: #497E74;
+          font-size: 20px;
+        }
+      }
+    }
+  }
+}
+
+.intro p {
+  line-height: 140%;
+}
+
+.entry-content {
+  p {
+    line-height: 150%;
+  }
+}
+
+.upper-posts {
+    color: #4F4F4F;
+
+    p {
+      font-size: 18px;
+      line-height: 140%;
+    }
+}
+
+.menu-container-main {
+  ul {
+    li {
+      a {
+        font-family: futurabold, sans-serif;
+        font-size: 24px;
+        font-weight: bold;
+      }
+    }
+  }
+}
+
+.hero-image article .hero-image-content-wrapper {
+  h1 {
+    color: #497E74;
+  }
+  p {
+    color: #4f4f4f;
+  }
+  p:nth-of-type(1) {
+    font-size: 1.125rem;
+    font-weight: 600;
+  }
+  p:nth-of-type(2) {
+    font-family: sfprodisplayheavy;
+    font-size: 1.125rem;
+    font-weight: 600;
+  }
+}
+
+.blog-area a {
+  color: #4f4f4f;
+}
+
+.blog-area .category-tag-wrapper,
+.entry-content {
+  color: #4F4F4F;
+  line-height: 150%;
+}
+
+.category-tag-wrapper {
+  font-size: 0.875rem;
+  line-height: 150%;
+}
+
+.category-wrapper {
+  font-weight: bold;
+}
+
+.tags-wrapper {
+  text-transform: capitalize;
+}
+
+.wpcr3_review {
+  .wpcr3_review_author {
+    font-size: 0 !important;
+    font-weight: bold;
+    font-style: normal !important;
+    color: #4F4F4F !important;
+  }
+
+  blockquote.wpcr3_content {
+    p {
+      line-height: 1.5!important;
+      color: #4F4F4F !important;
+    }
+  }
+}
+
+.entry-title {
+  font-size: 1.25rem;
+}
+
+.ref,
+.ref-header {
+  color: #4F4F4F;
+}
+
+.menu-social a {
+  font-size: 1.5rem !important;
+}
+
+.copyright {
+  font-size: 0.8rem;
+}
+
+#contact-us {
+  form {
+    input, textarea {
+      font-size: 1.2rem;
+      line-height: 150%;
+    }
+  }
+}

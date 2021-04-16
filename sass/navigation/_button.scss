@@ -1,0 +1,94 @@
+button {
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+.btn-main {
+  background-color: transparent;
+  border: transparent;
+  padding: 0;
+  color: #81b7ae;
+  font-size: 2rem;
+
+  &:active,
+  &:focus {
+    outline: none;
+  }
+}
+
+.close_menu_btn {
+  padding: 0.5rem;
+  align-self: flex-end;
+}
+
+.menu-container-main .menu-main ul li {
+  padding-bottom: 1.5rem;
+}
+
+.btn-main-clicked .menu-main {
+  opacity: 1;
+  visibility: visible;
+}
+
+.hero-image article .hero-image-content-wrapper .pwa-site {
+  background-color: white;
+  padding: 1rem 6.4rem;
+  border-radius: 2rem;
+  width: 311px;
+  box-shadow: (0px 4px 4px rgba(0, 0, 0, 0.25));
+  font-size: 1rem;
+  font-weight: bold;
+  color: #4f4f4f;
+}
+
+#viewmore,
+#review,
+.wpcf7-submit {
+  background-color: #497E74;
+  padding: 1rem;
+  width: 311px;
+  border-radius: 2rem;
+  text-align: center;
+  color: white;
+  box-shadow: (0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.wpcf7-submit {
+  margin-top: 2rem;
+  border: none;
+  width: 343px;
+}
+
+//Review page submit button
+.wpcr3_respond_1.wpcr3_in_content {
+  .wpcr3_dotline,
+  .wpcr3_respond_2 {
+    .wpcr3_div_2 {
+      table {
+        tbody {
+          .wpcr3_button_1.wpcr3_submit_btn {
+            text-transform: uppercase;
+            font-size: 18px;
+            margin-top: 1rem;
+            background: #81b7ae;
+            padding: 1rem;
+            width: 266px;
+            border: none;
+            border-radius: 2rem;
+            text-align: center;
+            color: white;
+            box-shadow: (0px 4px 4px rgba(0, 0, 0, 0.25));
+
+            &:hover {
+              color: black;
+              background: #dcebe9;
+            }
+          }
+          .wpcr3_button_1.wpcr3_cancel_btn {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}

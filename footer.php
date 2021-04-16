@@ -1,36 +1,60 @@
-<?php
-/**
- * The template for displaying the footer
- *
- * Contains the closing of the #content div and all content after.
- *
- * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
- *
- * @package KIIITECH_TENEX
- */
+<footer class="site-footer" id="site-footer">
 
-?>
 
-	<footer id="colophon" class="site-footer">
-		<div class="site-info">
-			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'kiiitech_tenex' ) ); ?>">
-				<?php
-				/* translators: %s: CMS name, i.e. WordPress. */
-				printf( esc_html__( 'Proudly powered by %s', 'kiiitech_tenex' ), 'WordPress' );
-				?>
-			</a>
-			<span class="sep"> | </span>
-				<?php
-				/* translators: 1: Theme name, 2: Theme author. */
-				printf( esc_html__( 'Theme: %1$s by %2$s.', 'kiiitech_tenex' ), 'kiiitech_tenex', '<a href="http://underscores.me/">Underscores.me</a>' );
-				?>
-		</div><!-- .site-info -->
-	</footer><!-- #colophon -->
-</div><!-- #page -->
+  <div class="menu-container-footer">
+
+
+    <div class="footer-logo">
+      <div class="logo">
+        <?php if (has_custom_logo()) : ?>
+
+          <a class="site-title" href="<?php home_url('/'); ?>">
+            <?php the_custom_logo(); ?>
+          </a>
+        <?php else : ?>
+          <a class="site-title" href="<?php home_url('/'); ?>">
+            <?php bloginfo('name'); ?>
+          </a>
+        <?php endif; ?>
+      </div>
+
+      <?php
+      wp_nav_menu(array(
+
+        'theme_location'      =>  'main_social',
+        'container'           =>  'div',
+        'container_class'     =>  'menu-social',
+        'container_id'        =>  'menu-social',
+        'link_before'       =>    '<span class="screen-reader-text">',
+        'link_after'       =>    '<span class="screen-reader-text">'
+      ));
+
+      ?>
+    </div>
+
+    <?php
+
+    wp_nav_menu(array(
+
+      'theme_location'      =>  'main_footer',
+      'container'           =>  'div',
+      'container_class'     =>  'menu-main-footer',
+      'container_id'        =>  'menu-main-in-footer',
+      'menu_class'          =>  'menu-list',
+    ));
+    ?>
+
+    <div class="copyright">
+      <p>All rights reserved &#169; 2021</p>
+
+    </div>
+</footer>
+</main> <!-- .site-main -->
+
+</div>
+</div> <!-- .content-area -->
 
 <?php wp_footer(); ?>
 
 </body>
 </html>
-
-kamal
